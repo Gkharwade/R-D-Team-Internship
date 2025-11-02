@@ -1,0 +1,109 @@
+# Week 2 - Proxmox Upgrade, VPN Setup & Server Infrastructure Deployment
+
+### 🗓 Duration
+**September 2025 - Week 2**
+
+---
+
+## 🔧 Topics Covered
+During the second week of my internship at **Networkers Home**, I performed multiple advanced setup and configuration tasks involving virtualization, VPN deployment, and physical server management.  
+The key focus was on **Proxmox upgrade**, **OpenVPN and pfSense installation**, **bare-metal Linux server setup**, and **building a server pod** integrated with firewalls, switches, and servers.
+
+---
+
+## 💻 Proxmox Installation & Upgrade
+
+**Proxmox VE (Virtual Environment)** is a Debian-based open-source hypervisor for managing virtual machines and containers.  
+After learning basic installation in Week 1, I upgraded our existing Proxmox infrastructure from **version 7.4 to 9.0 (latest)**.
+
+### 🧩 Steps Performed:
+1. Verified current version and performed a full backup of existing VMs.  
+2. Updated repositories and performed the version upgrade via CLI.  
+3. Reconfigured network bridges and storage pools post-upgrade.  
+4. Verified node health and cluster synchronization.  
+5. Installed **PnetLab** inside Proxmox for network simulation and device emulation.  
+
+> 🧠 *Key Learning:* Understood the Proxmox upgrade process, repository management, and how to handle version compatibility between host and guest systems.
+
+---
+
+## 🌐 Introduction to VPN & pfSense / OPNsense
+
+This week introduced me to the concepts of **Virtual Private Networks (VPNs)** and how they are implemented using **pfSense** and **OPNsense**.
+
+### 🧩 Tasks Completed:
+- Installed **pfSense** and **OPNsense** inside Proxmox as virtual appliances.  
+- Configured WAN and LAN interfaces with proper IP addressing.  
+- Learned about **OpenVPN server-client configuration** and **SSL/TLS authentication**.  
+- Set up firewall rules for VPN access and tested remote connectivity.  
+
+> 🔒 *Key Learning:* Understood the purpose of VPNs in securing remote access and how firewall appliances manage encrypted communication channels.
+
+---
+
+## 🖥️ Linux (Ubuntu) Server Installation
+
+I installed a **bare-metal Ubuntu Server** on physical hardware for hosting various network services.
+
+### 🧩 Steps:
+1. Installed **Ubuntu Server LTS** on a Dell PowerEdge R710.  
+2. Configured network interfaces and SSH remote access.  
+3. Installed packages for virtualization tools and network monitoring.  
+4. Linked it to Proxmox for testing VM migration and file sharing.
+
+> 🧠 *Key Learning:* Learned to handle OS installation directly on server hardware (bare-metal) and manage it as part of a virtualized environment.
+
+---
+
+## 🧱 Server Pod Setup
+
+We built a **server pod** combining multiple enterprise devices, including:
+
+| Device | Brand / Model | Purpose |
+|---------|----------------|----------|
+| **Firewall** | Checkpoint, Palo Alto | Network perimeter security and policy management |
+| **Switches** | Cisco Catalyst 3560, 2960 | Internal LAN connectivity and VLAN segmentation |
+| **Servers** | Dell PowerEdge R710 / UCS B200 | Hosting Proxmox, pfSense, and Ubuntu instances |
+
+> 🧠 *Key Learning:* Understood how a complete enterprise pod integrates firewalls, switches, and servers to form a lab ecosystem for testing and training.
+
+---
+
+## 🧩 Installed PnetLab Inside Proxmox
+
+**PnetLab** was installed within the Proxmox server to simulate advanced Cisco and firewall labs.
+
+### 🧩 Key Steps:
+- Imported the **PnetLab ISO** into Proxmox as a virtual machine.  
+- Configured networking (bridge mode) to allow external access.  
+- Integrated Cisco images (IOSv, IOL, ASA, FortiGate) for topology creation.  
+- Tested router-to-firewall and LAN-WAN scenarios.
+
+> 🧠 *Key Learning:* Understood how virtualization enables multi-device lab creation, saving hardware resources while providing real-world configuration practice.
+
+---
+
+## 🧠 Summary
+This week strengthened my understanding of **enterprise virtualization and security solutions**.  
+Upgrading Proxmox taught me version management and system maintenance, while working with **pfSense/OPNsense** gave me practical exposure to VPN concepts and firewall configurations.  
+Building the server pod and deploying **PnetLab** tied everything together, allowing me to simulate complex network setups on a virtualized platform.
+
+---
+
+## ⚙️ Tools / Platforms Used
+- **Proxmox VE 9.0**  
+- **pfSense / OPNsense Firewalls**  
+- **Ubuntu Server (Bare Metal)**  
+- **Cisco Catalyst Switches & Checkpoint Firewall**  
+- **PnetLab Simulation Platform**  
+- **Dell PowerEdge R710 & Cisco UCS B200 M3**
+
+---
+
+## 🧾 Reflection
+Week 2 provided hands-on experience in **integrating physical and virtual network environments**.  
+It helped me understand how enterprise systems evolve — from hardware installation to virtualized environments and secure remote access.  
+By combining **Proxmox, pfSense, and PnetLab**, I now have a clear vision of how large-scale labs and corporate networks are designed, managed, and secured.
+
+---
+
