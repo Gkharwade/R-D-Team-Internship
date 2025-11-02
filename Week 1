@@ -1,0 +1,60 @@
+# Week 1 - Introduction to Networking Devices & Cabling
+
+### 🗓 Duration
+**July 2025 - Week 1**
+
+---
+
+## 🔧 Topics Covered
+During the first week of my internship at **Networkers Home**, I learned about various **networking devices, their functions, and different types of network cables** used in real environments.
+
+---
+
+## 🧩 Networking Devices Learned
+
+| Device | Series / Example | Purpose |
+|---------|------------------|----------|
+| **Router** | Cisco 2900, 3900, ISR series | Connects multiple networks and directs traffic between them |
+| **Switch** | Cisco Catalyst 2960, 3750 | Connects multiple devices within a LAN |
+| **Firewall** | FortiGate, Palo Alto | Protects network by controlling inbound/outbound traffic |
+| **Access Point** | Cisco Aironet | Provides wireless connectivity to users |
+| **Server** | Dell R710, Proxmox Host | Hosts virtual machines and network services |
+
+---
+
+## 🧵 Cable Types & Differences
+
+| Cable Type | Max Speed | Max Distance | Shielding | Use Case |
+|-------------|------------|---------------|------------|-----------|
+| **Cat5** | Up to 100 Mbps | 100 meters | Unshielded | Basic LAN connections |
+| **Cat5e** | Up to 1 Gbps | 100 meters | Better noise reduction | Modern networks and office use |
+| **Cat6** | Up to 10 Gbps | 55–100 meters | Tighter twist & insulation | Data centers, high-speed connections |
+
+> 🔸 *Cat 6 has thicker insulation and better resistance to crosstalk than Cat 5e.*
+
+---
+
+## 🧠 Key Learnings
+- Identified physical components of routers and switches (ports, console, interfaces).  
+- Understood the purpose of **management ports**, **uplink ports**, and **SFP slots**.  
+- Learned about **straight-through** vs **cross-over** cable usage.  
+- Understood **color coding standards (T568A/B)**.  
+- Observed how routers and switches are connected in lab environments.  
+
+---
+
+## ⚙️ Tools / Equipment Observed
+- Cisco Router (ISR 2900 Series)  
+- Cisco Switch (Catalyst 2960 Series)  
+- LAN Tester & Crimping Tools  
+- Cat5e & Cat6 Ethernet Cables  
+
+---
+
+## 🧩 Reflection
+This week gave me a clear understanding of **how data travels physically across a network**, how devices interconnect, and how choosing the right cable affects performance and reliability.
+
+---
+
+## 🖼️ Screenshots / Photos (Optional)
+*(You can add images later here, e.g., router setup or cable testing)*  
